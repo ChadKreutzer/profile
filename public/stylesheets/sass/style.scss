@@ -1,0 +1,95 @@
+/* mixins, variables, etc. */
+
+@mixin full_background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgb(0, 0, 0);
+  background-attachment: fixed;
+  height: 33vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-fluid { 
+  padding: 0;
+}
+
+/* Fonts and Typography */
+
+@import url(https://fonts.googleapis.com/css?family=Sigmar+One);
+
+h1, .navbar-brand {
+  font-family: 'Sigmar One', cursive;
+}
+.nav, h2, h3, label, small {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-weight: bold;
+}
+p {
+  font-family: "Georgia", serif;
+  font-size: 1.5em;
+}
+h2 {
+  font-size: 3.5em;
+}
+
+/* Text Background Design */
+
+.text-bg {
+  padding: 5px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  color: rgb(10, 10, 10);
+  background-color: rgb(255, 255, 255);
+  background-color: rgba(200, 200, 200, 0.75);
+  box-shadow: 5px 5px 10px rgb(10, 10, 10);
+}
+
+/* Header and Footer */
+
+footer {
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  width:100%;
+}
+
+/* Home */
+
+#home {
+  @include full_background;
+  background-image: url("/images/me_at_table_mountain.jpg");
+  height: 100vh;
+}
+.jumbotron {
+  background-color: rgb(255, 255, 255);
+  background-color: rgba(200, 200, 200, 0.66);
+  h1 {
+    text-shadow: 5px 5px 10px rgb(10, 10, 10);
+    small {
+      color: rgb(75, 75, 75);
+    }
+  }
+}
+
+/* About */
+
+#about {
+  @include full_background;
+  background-image: url("/images/yellow_grate.jpg");
+}
+#about-text {
+  color: rgb(10, 10, 10);
+  background-color: rgb(255, 255, 255);
+  background-color: rgba(200, 200, 200, 0.75);
+  margin-bottom: -10px;
+}
+
+/* Portfolio */
+
+#portfolio {
+  @include full_background;
+  background-image: url("/images/mecha_needle.jpg");
+}
