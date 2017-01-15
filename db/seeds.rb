@@ -3,11 +3,7 @@ project_list = [
     "Bootstrap Calculator",
     "/images/projects/bs_calc.jpg",
     "http://earsplitting-wilderness.surge.sh/",
-    "I think this one is a lot of fun. Especially the fact that the code is " \
-    "almost completely jQuery. Fun fact: I had originally just blocked in " \
-    "the buttons with the default bootstrap colors with plans to change " \
-    "them. But I liked the look so much I just kept them as is and changed " \
-    "the background to another bootstrap color to match."
+    "A basic online calculator all in default bootstrap colors."
   ],
   [
     "Pomodoro Clock",
@@ -20,7 +16,13 @@ project_list = [
     "Wikiview",
     "images/projects/wikiview.jpg",
     "https://measly-oatmeal.surge.sh/",
-    "A Wikipedia viewer app. I'm quite proud of the design on this site."]
+    "A Wikipedia viewer app. I'm quite proud of the design on this site."
+  ],
+  [
+    "Random Quote Machine",
+    "/images/projects/random_quote.jpg",
+    "http://fluttering-force.surge.sh/",
+    "A random quote machine that makes use of some of my pictures."]
 ]
 
 project_list.each do | title, image, url, description |
