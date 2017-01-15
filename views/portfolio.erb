@@ -5,3 +5,8 @@
     </h2>
   </div>
 </div>
+<% @projects.each do |project| %>
+  <h1><%= project.title %></h1>
+  <a href=<%= project.url %>><img src=<%= project.image_link %>></a>
+  <p><%= project.description %></p>
+<% end %>
