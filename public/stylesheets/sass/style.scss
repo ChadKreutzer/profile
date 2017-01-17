@@ -12,7 +12,7 @@
   align-items: center;
 }
 
-.container-fluid { 
+.container-fluid {
   padding: 0;
 }
 
@@ -39,7 +39,6 @@ h2 {
 
 .text-bg {
   padding: 5px;
-  margin-bottom: 30px;
   border-radius: 5px;
   color: rgb(10, 10, 10);
   background-color: rgb(255, 255, 255);
@@ -75,16 +74,13 @@ footer {
 }
 
 /* About */
-
 #about {
   @include full_background;
   background-image: url("/images/yellow_grate.jpg");
 }
-#about-text {
-  color: rgb(10, 10, 10);
-  background-color: rgb(255, 255, 255);
-  background-color: rgba(200, 200, 200, 0.75);
-  margin-bottom: -10px;
+#about-body {
+  padding: 20px;
+  background: tan;
 }
 
 /* Portfolio */

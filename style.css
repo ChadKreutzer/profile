@@ -1,0 +1,95 @@
+/* mixins, variables, etc. */
+@import url(https://fonts.googleapis.com/css?family=Sigmar+One);
+.container-fluid {
+  padding: 0; }
+
+/* Fonts and Typography */
+h1, .navbar-brand {
+  font-family: 'Sigmar One', cursive; }
+
+.nav, h2, h3, label, small {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-weight: bold; }
+
+p {
+  font-family: "Georgia", serif;
+  font-size: 1.5em; }
+
+h2 {
+  font-size: 3.5em; }
+
+/* Text Background Design */
+.text-bg {
+  padding: 5px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  color: #0a0a0a;
+  background-color: white;
+  background-color: rgba(200, 200, 200, 0.75);
+  box-shadow: 5px 5px 10px #0a0a0a; }
+
+/* Header and Footer */
+footer {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  width: 100%; }
+
+/* Home */
+#home {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+  background-attachment: fixed;
+  height: 33vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/images/me_at_table_mountain.jpg");
+  height: 100vh; }
+
+.jumbotron {
+  background-color: white;
+  background-color: rgba(200, 200, 200, 0.66); }
+  .jumbotron h1 {
+    text-shadow: 5px 5px 10px #0a0a0a; }
+    .jumbotron h1 small {
+      color: #4b4b4b; }
+
+/* About */
+#about {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+  background-attachment: fixed;
+  height: 33vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/images/yellow_grate.jpg"); }
+
+#about-body {
+  margin-bottom: 20px; }
+
+#about-text {
+  color: #0a0a0a;
+  background-color: white;
+  background-color: rgba(200, 200, 200, 0.75);
+  margin-bottom: -10px; }
+
+/* Portfolio */
+#portfolio {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+  background-attachment: fixed;
+  height: 33vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/images/mecha_needle.jpg"); }
+
+/*# sourceMappingURL=style.css.map */
