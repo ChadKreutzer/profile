@@ -5,8 +5,18 @@
     </h2>
   </div>
 </div>
-<% @projects.each do |project| %>
-  <h1><%= project.title %></h1>
-  <a href=<%= project.url %>><img src=<%= project.image_link %>></a>
-  <p><%= project.description %></p>
-<% end %>
+<div id="portfolio-body">
+<ul class="flex-container">
+  <% @projects.each do |project| %>
+      <li class="text-bg thumbnail flex-item">
+        <a href=<%= project.url %>>
+          <img class="img-responsive" src=<%= project.image_link %>>
+        </a>
+        <div class="caption">
+          <h3><%= project.title %></h3>
+          <p><%= project.description %></p>
+        </div>
+      </li>
+  <% end %>
+</ul>
+</div>

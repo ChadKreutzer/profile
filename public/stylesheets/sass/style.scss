@@ -80,7 +80,7 @@ footer {
 }
 #about-body {
   padding: 20px;
-  background: tan;
+  background-color: rgb(135, 128, 135);
 }
 
 /* Portfolio */
@@ -88,4 +88,38 @@ footer {
 #portfolio {
   @include full_background;
   background-image: url("/images/mecha_needle.jpg");
+}
+
+#portfolio-body {
+  padding: 20px;
+  background-color: rgb(102,108,134);
+}
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  
+  display: flex;
+  
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.flex-item {
+  width: 240px;
+  height: 300px;
+  margin-top: 10px;
+  margin-bottom: 200px;
+}
+
+#contact {
+  @include full_background;
+  background-image: url("/images/union_station.jpg");
+}
+
+#contact-body {
+  padding: 20px;
+  background-color: rgb(255,247,194);
 }
