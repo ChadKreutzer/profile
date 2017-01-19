@@ -31,7 +31,3 @@ post '/' do
   
   redirect '/#contact'
 end
-
-# get '/success' do
-#   erb :success
-# end
