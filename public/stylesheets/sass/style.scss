@@ -59,7 +59,7 @@ footer {
 
 /* Home */
 
-#home {
+#home, #goodbye {
   @include full_background;
   background-image: url("/images/me_at_table_mountain.jpg");
   height: 100vh;
