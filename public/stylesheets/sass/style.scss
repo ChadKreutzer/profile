@@ -27,12 +27,14 @@ h1, .navbar-brand {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   font-weight: bold;
 }
+.section-heading {
+  display: inline-block;
+  font-size: 3.5em;
+  margin-bottom: 30px;
+}
 p {
   font-family: "Georgia", serif;
   font-size: 1.5em;
-}
-h2 {
-  font-size: 3.5em;
 }
 
 /* Text Background Design */
@@ -74,6 +76,7 @@ footer {
 }
 
 /* About */
+
 #about {
   @include full_background;
   background-image: url("/images/yellow_grate.jpg");
@@ -93,12 +96,14 @@ footer {
 #portfolio-body {
   padding: 20px;
   background-color: rgb(102,108,134);
+  //padding-bottom: 100px;
 }
 
 .flex-container {
   padding: 0;
   margin: 0;
   list-style: none;
+  margin-bottom: 50px;
   
   display: flex;
   
@@ -107,19 +112,45 @@ footer {
   justify-content: space-around;
 }
 
-.flex-item {
+.project-item {
   width: 240px;
   height: 300px;
   margin-top: 10px;
   margin-bottom: 200px;
 }
 
+/* Contact */
+
 #contact {
   @include full_background;
   background-image: url("/images/union_station.jpg");
 }
 
-#contact-body, form {
+#contact-body {
   padding: 20px;
   background-color: rgb(255,247,194);
+  padding-bottom: 100px;
+}
+
+form {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+#li {
+  background: transparent;
+  :hover {
+    color: #4875B4;
+  }
+}
+#gh {
+  background: transparent;
+  :hover {
+    color: #6E5494;
+  }
+}
+#tw {
+  background: transparent;
+  :hover {
+    color: #33CCFF;
+  }
 }

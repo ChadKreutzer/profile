@@ -1,6 +1,6 @@
 <div id="portfolio">
   <div class="row">
-    <h2 class="text-bg text-center container">
+    <h2 class="text-bg section-heading text-center">
       Things I Have Made
     </h2>
   </div>
@@ -8,7 +8,7 @@
 <div id="portfolio-body">
 <ul class="flex-container">
   <% @projects.each do |project| %>
-      <li class="text-bg thumbnail flex-item">
+      <li class="text-bg thumbnail project-item">
         <a href=<%= project.url %>>
           <img class="img-responsive" src=<%= project.image_link %>>
         </a>
