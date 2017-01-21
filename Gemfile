@@ -1,11 +1,14 @@
 source 'https://rubygems.org'
 
 gem 'sinatra'
-gem 'sinatra-contrib'
-gem 'redcarpet'
+gem 'sinatra-contrib', require: 'sinatra/reloader'
+gem 'redcarpet', require: 'sass/plugin/rack'
 gem 'sass'
 gem 'activerecord'
-gem 'sinatra-activerecord'
-gem 'sqlite3'
+gem 'sinatra-activerecord', require: 'sinatra/activerecord'
 gem 'rake'
 gem 'pony'
+
+group :development do
+  gem 'sqlite3'
+end
