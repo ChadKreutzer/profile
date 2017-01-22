@@ -5,7 +5,8 @@
 # require 'sass/plugin/rack'
 
 
-set :database, "sqlite3:portfoliodb.sqlite3"
+# set :database, "sqlite3:portfoliodb.sqlite3"
+require './config/environment'
 require './models'
 
 Sass::Plugin.options[:style] = :compressed
